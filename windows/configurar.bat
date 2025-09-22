@@ -38,8 +38,9 @@ echo.
 echo Agora vou testar se a configuracao esta funcionando...
 echo.
 aws sts get-caller-identity
+set RESULTADO_TESTE=%errorlevel%
 echo.
-if %errorlevel% equ 0 (
+if %RESULTADO_TESTE% equ 0 (
     echo ========================================
     echo    SUCESSO! TUDO FUNCIONANDO!
     echo ========================================
@@ -54,8 +55,9 @@ if %errorlevel% equ 0 (
     echo TESTE FINAL - Vamos ver se consegue acessar o bucket:
     echo.
     aws s3 ls s3://systra-avanco-economico-imports/
+    set RESULTADO_BUCKET=%errorlevel%
     echo.
-    if %errorlevel% equ 0 (
+    if %RESULTADO_BUCKET% equ 0 (
         echo PERFEITO! Voce consegue acessar o bucket systra-avanco-economico-imports
         echo Isso significa que sua configuracao esta 100%% funcionando!
     ) else (
