@@ -66,22 +66,6 @@ if %RESULTADO_TESTE% equ 0 (
         echo Mas se o comando anterior funcionou, sua AWS CLI esta OK!
     )
     echo.
-) else (
-    echo ========================================
-    echo    ALGO DEU ERRADO...
-    echo ========================================
-    echo.
-    echo Nao foi possivel conectar na AWS.
-    echo Isso pode acontecer por:
-    echo.
-    echo 1. Access Key ID digitada errada
-    echo 2. Secret Access Key digitada errada  
-    echo 3. Usuario sem permissao
-    echo 4. Problema de internet
-    echo.
-    echo SOLUCAO: Execute este script novamente e
-    echo confira bem as informacoes que voce digitou.
-    echo.
 )
 echo.
 pause
