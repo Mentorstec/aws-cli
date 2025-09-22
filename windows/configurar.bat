@@ -10,10 +10,6 @@ echo IMPORTANTE: Voce precisa ter em maos:
 echo 1. Access Key ID (comeca com AKIA...)
 echo 2. Secret Access Key (string longa de 40 caracteres)
 echo.
-echo Se voce NAO tem essas informacoes, pare aqui e:
-echo - Va no console da AWS
-echo - Acesse IAM
-echo - Crie um usuario ou pegue as chaves existentes
 echo.
 pause
 echo.
@@ -52,12 +48,9 @@ if %errorlevel% equ 0 (
     echo.
     echo COMANDOS UTEIS PARA VOCE USAR:
     echo aws s3 ls                                              (listar todos os buckets)
-    echo aws s3 ls s3://systra-avanco-economico-imports/        (listar arquivos do bucket)
+    echo aws s3 ls s3://nome-do-bucket/        (listar arquivos do bucket)
     echo aws ec2 describe-instances                             (listar instancias EC2)
     echo.
-    echo TESTE FINAL - Vamos ver se consegue acessar o bucket:
-    echo.
-    aws s3 ls s3://systra-avanco-economico-imports/
     echo.
     if %errorlevel% equ 0 (
         echo PERFEITO! Voce consegue acessar o bucket systra-avanco-economico-imports
