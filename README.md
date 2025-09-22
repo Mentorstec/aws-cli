@@ -32,12 +32,7 @@ Antes de rodar o configurar, você precisa ter:
 2. **Secret Access Key** (40 caracteres)
 
 ### Como conseguir essas chaves:
-1. Entre no console da AWS
-2. Vá em **IAM** 
-3. Clique em **Usuários**
-4. Selecione seu usuário
-5. Aba **Credenciais de segurança**
-6. **Criar chave de acesso**
+**Procure o Fernando Akira ou Fecarotta** - eles vão te fornecer as credenciais necessárias.
 
 ---
 
@@ -49,8 +44,8 @@ O script de configurar já testa automaticamente, mas você pode testar manualme
 # Teste básico
 aws sts get-caller-identity
 
-# Teste específico do seu bucket
-aws s3 ls s3://systra-avanco-economico-imports/
+# Listar buckets disponíveis
+aws s3 ls
 ```
 
-Se conseguir listar os arquivos do bucket `systra-avanco-economico-imports`, significa que está **100% funcionando**! 🎉
+Se aparecer sua identidade AWS e conseguir listar buckets, significa que está **100% funcionando**! 🎉
