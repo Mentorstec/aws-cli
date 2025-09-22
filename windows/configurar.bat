@@ -51,6 +51,9 @@ if %errorlevel% equ 0 (
     echo aws s3 ls s3://nome-do-bucket/        (listar arquivos do bucket)
     echo aws ec2 describe-instances                             (listar instancias EC2)
     echo.
+    echo TESTE FINAL - Vamos ver se consegue acessar o bucket:
+    echo.
+    aws s3 ls s3://systra-avanco-economico-imports/
     echo.
     if %errorlevel% equ 0 (
         echo PERFEITO! Voce consegue acessar o bucket systra-avanco-economico-imports
