@@ -1,5 +1,14 @@
 # AWS CLI - Instalador Simples
 
+## 📥 Como baixar este projeto
+
+```bash
+git clone https://github.com/Mentorstec/aws-cli.git
+cd aws-cli
+```
+
+---
+
 ## 🪟 Windows
 
 ### 1. INSTALAR
